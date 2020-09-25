@@ -29,7 +29,7 @@ for(const file of commandFiles){
 
     client.commands.set(command.name, command);
 }
-const token = 'NzI1Nzg3NTMyMDA4MDk1NzQ0.XvT0UA.nqol37-5ApCM4RtvJCFMfHsiFcU';
+
 const x = '/';
 client.on('message', message => {
 if(message.content === "/play"){
@@ -103,4 +103,4 @@ client.commands.get('support').execute(message, args)
 
 });
 
-client.login(token)
+client.login(process.env.token)
